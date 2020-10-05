@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ruteo</title>
+  </head>
+  <body class="bg-dark ">
+    <div id="page-loader"><span class="preloader-interior"></span></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          {% include "barra.html" %}
+        </div>
+      </div>
+      <div class="row ">
+        <div id="content"class="col-12" style="padding-top: 70px;background-color: #FFFFFF;">
+          {% block content %}
+
+          {% endblock %}
+        </div>      
+      </div>
+    </div>    
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+{% block content %}
+<h1>Servicios</h1>
+<div class="row" id="servicios-container">
+	 {% for servicio in servicios %}
+	 	<div class="row">
+	 		<h3>{{servicio.nombre}}</h3>
+	 		<p>{{servicio.descripcion}}</p>
+	 		<img src="/media/{{servicio.imagen }}" alt='Image' class='img-fluid'>
+	 		
+	 	</div>
+     {% endfor%}
+</div>
+{% endblock %}
